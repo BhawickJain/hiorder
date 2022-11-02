@@ -2,9 +2,9 @@ name: Create Release
 
 on:
   push:
-    branches:
-      - 'releases/**'
-jobs:
+    tags:
+      - '*.*.*'
+
   build:
     name: Create release
     runs-on: ubuntu-latest
