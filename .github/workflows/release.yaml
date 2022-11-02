@@ -5,6 +5,7 @@ on:
     tags:
       - '*.*.*'
 
+jobs:
   build:
     name: Create release
     runs-on: ubuntu-latest
