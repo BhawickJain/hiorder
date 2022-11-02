@@ -7,3 +7,12 @@ npm init -y
 npm install typescript
 npx tsc --init
 ```
+
+## TODO
+```
+ : prettier
+ : linter
+ : jest
+ : github ci
+ : github package publishing
+```
