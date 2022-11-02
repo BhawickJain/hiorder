@@ -2,7 +2,6 @@ name: Release
 
 on:
   push:
-    branches: [main]
     tags:
       - '*.*.*'
 
@@ -11,6 +10,9 @@ jobs:
     name: Create release
     runs-on: ubuntu-latest
     steps:
+      - name: Exit if not on main branch
+        if: endsWith(github.ref, 'main') == false
+        run: exit -1      - uses: actions/checkout@v3
       - name: Checkout
         uses: actions/checkout@v3
       - name: Extract release notes
