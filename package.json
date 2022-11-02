@@ -1,16 +1,47 @@
 {
-  "name": "hiorder",
-  "version": "1.0.0",
+  "name": "@bhawick/hiorder",
+  "version": "0.0.2",
   "description": "high-order functions library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-      "/dist"
-  ]
+    "/dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "eslint src",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "...": "yarn type-check && yarn format && yarn lint && yarn test",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "type-check": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BhawickJain/hiorder"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.1"
+  }
 }
