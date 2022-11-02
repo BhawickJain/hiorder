@@ -17,7 +17,7 @@ jobs:
       - name: Install modules with lock file
         run: yarn install --frozen-lockfile
       - name: Build dist folder
-      - run: yarn build
+        run: yarn build
       - name: Publish to NPM
         run: yarn publish
         env:
