@@ -18,6 +18,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Security
 
+## [0.0.17] - 2022-11-02
+
+### Added 
+```
+partition
+```
+
+### Changed
+```
+name each publish and release step
+```
+
 ## [0.0.16] - 2022-11-02
 
 ### Added
