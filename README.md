@@ -15,6 +15,12 @@ yarn link
 # add linked package to test project
 cd test/
 yarn link @bhawick/hiorder
+
+# to increment version
+yarn version --major
+yarn version --minor
+yarn version --patch
+git push --tags
 ```
 
 ## TODO

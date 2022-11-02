@@ -1,11 +1,8 @@
-name: Create Release
+name: Release
 
 on:
   push:
     branches: [main]
-    tags:
-      - '*.*.*'
-
 jobs:
   build:
     name: Create release
