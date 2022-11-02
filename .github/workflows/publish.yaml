@@ -14,8 +14,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
           scope: '@octocat'
-      - run: yarn install --frozen-lockfile
+      - name: Install modules with lock file
+        run: yarn install --frozen-lockfile
+      - name: Build dist folder
       - run: yarn build
-      - run: yarn publish
+      - name: Publish to NPM
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
