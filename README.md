@@ -16,6 +16,8 @@ yarn link
 cd test/
 yarn link @bhawick/hiorder
 
+# increment version
+yarn patch # !! only use when ready to release
 # to increment version
 yarn version --major
 yarn version --minor

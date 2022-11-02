@@ -1,18 +1,24 @@
-name: Publish
-
+name: Publish Package to npmjs
 on:
-  push:
-    branches: [main]
+  release:
+    types: [published]
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - run: npm install
-      - run: npm test
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@octocat'
+      - name: Install modules with lock file
+        run: yarn install --frozen-lockfile
+      - name: Build dist folder
+        run: yarn build
+      - name: Publish to NPM
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
