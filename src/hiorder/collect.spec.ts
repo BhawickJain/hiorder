@@ -1,4 +1,4 @@
-import collect from "./collect";
+import { collect } from "./collect";
 
 test("collect return a collection of start definitions repeatedly", () => {
   function createStar() {

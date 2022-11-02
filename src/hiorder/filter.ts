@@ -1,4 +1,4 @@
-const filter = <T>(inputArray: T[], fn: (el: T) => boolean): T[] => {
+export function filter<T>(inputArray: T[], fn: (el: T) => boolean): T[] {
   const filteredArr: T[] = [];
 
   inputArray.forEach((el: T) => {
@@ -6,6 +6,4 @@ const filter = <T>(inputArray: T[], fn: (el: T) => boolean): T[] => {
   });
 
   return filteredArr;
-};
-
-export default filter;
+}
