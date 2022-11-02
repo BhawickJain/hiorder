@@ -1,5 +1,5 @@
 {
-  "name": "@bhawickjain/hiorder",
+  "name": "@bhawick/hiorder",
   "version": "0.0.2",
   "description": "high-order functions library",
   "main": "dist/index.js",
