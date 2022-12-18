@@ -10,7 +10,6 @@ npx tsc --init
 ```
 
 __link local package to a test project__
-
 ```
 cd lib/
 yarn link
@@ -24,7 +23,6 @@ yarn link @bhawick/hiorder
 
 __increment version___
 increment version in package.json and add version git tag
-
 ```
 yarn patch # !! only use when ready to release
 # to increment version
