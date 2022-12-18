@@ -18,6 +18,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Security
 
+## [0.0.18] - 2022-12-18
+
+Minor changes to the test suite, unrelated to functionality, all related to DX.
+
 ## [0.0.17] - 2022-11-02
 
 ### Added 

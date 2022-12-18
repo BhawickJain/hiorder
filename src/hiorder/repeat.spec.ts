@@ -1,4 +1,5 @@
 import { repeat } from "./repeat";
+import { expect, test, jest } from "@jest/globals";
 
 test("repeat calls a function a certain specified number of times", () => {
   const print = jest.fn(); // empty function returns void

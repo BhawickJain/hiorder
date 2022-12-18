@@ -1,4 +1,5 @@
 import { filter } from "./filter";
+import { expect, test } from "@jest/globals";
 
 test("1 -- Filter return positive numbers when given an array of numbers and a isPositive function", () => {
   const isPositive = (num: number): boolean => num > 0;
