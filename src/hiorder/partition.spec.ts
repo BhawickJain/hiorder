@@ -1,4 +1,5 @@
 import { partition } from "./partition";
+import { expect, test } from "@jest/globals";
 
 test("partition returns two array of numbers separated by whether they are odd", () => {
   function isOdd(n: number) {

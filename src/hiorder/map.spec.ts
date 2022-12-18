@@ -1,4 +1,5 @@
 import { map } from "./map";
+import { expect, test } from "@jest/globals";
 
 test("1 -- map return an array with an addOne operation against each element", () => {
   const addOne = (num: number): number => num + 1;

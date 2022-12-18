@@ -1,4 +1,5 @@
 import { find } from "./find";
+import { expect, test } from "@jest/globals";
 
 test("find returns the first item that matches predicate function in an array of numbers", () => {
   expect(find([1, 2, 3, 4], (num) => num === 3)).toBe(3);

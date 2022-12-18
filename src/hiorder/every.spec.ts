@@ -1,4 +1,5 @@
 import { every } from "./every";
+import { expect, test } from "@jest/globals";
 
 test("every returns if numbers in an array are all even", () => {
   const isEven = (el: number) => el % 2 === 0;
