@@ -18,6 +18,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Security
 
+## [0.0.19] - 2023-03-11
+
+Minor changes to the test suite, unrelated to functionality, all related to DX.
+
+New `README.md` with `CONTRIBUTION.md` Docs
+
 ## [0.0.18] - 2022-12-18
 
 Minor changes to the test suite, unrelated to functionality, all related to DX.
