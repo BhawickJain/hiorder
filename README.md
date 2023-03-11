@@ -1,6 +1,20 @@
 # hiorder — higher-order function library
 
-## steps to make this package
+## how to use
+
+```
+yarn add @bhawick/hiorder
+```
+
+__minimal example__
+```ts
+// index.ts
+import {reduce} from "@bhawick/hiorder";
+
+console.log(reduce([1, 2, 3], (a: number, b: number) => a+b, 0))
+```
+
+## steps to build this package
 
 __install dependencies__
 ```ts
@@ -23,12 +37,27 @@ npm install typescript
 npx tsc --init
 ```
 
+### import published build and run sample
+
+```
+cd test/
+yarn add @bhawick/hiorder
+```
+
+```ts
+// index.ts
+import {reduce} from "@bhawick/hiorder/dist";
+
+console.log(reduce([1, 2, 3], (a: number, b: number) => a+b, 0))
+```
+
+### import and run the local package build
+
 __link local package to a test project__
 ```
 cd lib/
 yarn link
 ```
-
 __add linked package to test project__
 ```
 cd test/
@@ -40,8 +69,6 @@ __add typescript compiler__
 cd test/
 yarn add --dev ts-node
 ```
-
-__import and run the local package build__
 ```ts
 // index.ts
 import {reduce} from "@bhawick/hiorder/dist";
