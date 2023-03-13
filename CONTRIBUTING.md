@@ -44,10 +44,17 @@ __link local package to a test project__
 cd lib/
 yarn link
 ```
+
+__build package with latest changes__
+```
+yarn build
+```
+
 __add linked package to test project__
 ```
 cd test/
 yarn link @bhawick/hiorder
+yarn add @bhawick/hiorder
 ```
 
 __add typescript compiler__
