@@ -20,6 +20,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [0.0.19] - 2023-03-11
 
+Doc Strings for each function available!
+
 Minor changes to the test suite, unrelated to functionality, all related to DX.
 
 New `README.md` with `CONTRIBUTION.md` Docs
