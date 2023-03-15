@@ -9,7 +9,7 @@
  * 
  * @param arr {el: Array<T>} - array of elements
  * @param fn {(el: T) => boolean} - predicate function
- * @returns boolean
+ * @returns true if all items in array evaluate true according to the predicate function
  */
 export function every<T>(arr: Array<T>, fn: (el: T) => boolean): boolean {
   let allTrue = true;
