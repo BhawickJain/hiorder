@@ -1,15 +1,15 @@
 /**
  * Given a function that takes one arguement and returns a value, take an array and operate the function on each item and return a new array. The function can take an argument of Type A and return Type B, thereby returning an array of type B from an array of Type A, via this map function.
- * 
+ *
  * @remarks
  * for further detail on map functions, see respective article on [Wikipedia](https://en.wikipedia.org/wiki/Map_(higher-order_function))
- * 
+ *
  * @example
  * A map operation by increment each number in the array by one. (Type A -> Type A)
  * ```ts
  * map([1, 2, 3], (it: number) => it + 1) //=> [2, 3, 4]
  * ```
- * 
+ *
  * @example
  * A map operation to take each number and turn it into a string. (Type A -> Type B)
  * ```ts
