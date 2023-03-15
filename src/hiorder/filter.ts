@@ -3,7 +3,8 @@
  * 
  * @example
  * ```ts
- * filter([1, -1, 2, -2, 3, -3], (it: number) => it < 0) // => [-1, -2, -3]
+ * filter([1, -1, 2, -2, 3, -3], (it: number) => it < 0)
+ *  // => [-1, -2, -3]
  * ```
  * 
  * @param inputArray - array to be filtered with the predicate function 
