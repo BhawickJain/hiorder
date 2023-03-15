@@ -9,13 +9,11 @@ test("reduce returns a sum of an array of numbers", () => {
 test("reduce returns a concatenation of an array of numbers", () => {
   const concat = (a: number | string, b: number): string => `${a}${b}`;
   expect(reduce([1, 2, 3], concat, "")).toBe("123");
-  const str = reduce([1, 2, 3], concat, "");
 });
 
 test("reduce can handle empty array returns a concatenation of an array of numbers", () => {
   const concat = (a: string, b: number): string => `${a}${b}`;
   expect(reduce([], concat, "")).toBe("");
-  const str = reduce([1, 2, 3], concat, "");
 });
 
 test("reduce returns a flattened array of numbers", () => {
