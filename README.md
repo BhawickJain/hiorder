@@ -1,4 +1,4 @@
-# hiorder — higher-order function and array library
+# `@bhawick/hiorder` — higher-order function and array library
 
 This is a series of high-order generic function which allows useful array manipulation and function evaluation. Example include `partition` which takes an array with a predicate function and return two arrays of elemets, the first containing those evaluated as `true` and the latter as `false`. An example of function evaluation is the `collect` method which allows you to call a function for a set number of times and 'collect' all returned results into an array. 
 
