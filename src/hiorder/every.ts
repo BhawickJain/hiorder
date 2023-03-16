@@ -8,13 +8,16 @@
  * ```
  *
  * @param arr {el: Array<T>} - array of elements
- * @param fn {(el: T) => boolean} - predicate function
+ * @param predicateFn {(el: T) => boolean} - predicate function
  * @returns true if all items in array evaluate true according to the predicate function
  */
-export function every<T>(arr: Array<T>, fn: (el: T) => boolean): boolean {
+export function every<T>(
+  arr: Array<T>,
+  predicateFn: (el: T) => boolean,
+): boolean {
   let allTrue = true;
   arr.forEach((el) => {
-    allTrue = allTrue === false || !fn(el) ? false : true;
+    allTrue = allTrue === false || !predicateFn(el) ? false : true;
   });
   return allTrue;
 }

@@ -8,14 +8,17 @@
  * ```
  *
  * @param inputArray - array to be filtered with the predicate function
- * @param fn - predicate function that takes an element in the array and returns boolean
+ * @param predicateFn - predicate function that takes an element in the array and returns boolean
  * @returns an array of element that are evaluated as true by the predicate function
  */
-export function filter<T>(inputArray: T[], fn: (el: T) => boolean): T[] {
+export function filter<T>(
+  inputArray: T[],
+  predicateFn: (el: T) => boolean,
+): T[] {
   const filteredArr: T[] = [];
 
   inputArray.forEach((el: T) => {
-    fn(el) && filteredArr.push(el);
+    predicateFn(el) && filteredArr.push(el);
   });
 
   return filteredArr;

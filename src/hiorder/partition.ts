@@ -6,17 +6,17 @@
  * // => [ [ -1, -2, -3 ], [ 1, 2, 3 ] ]
  * ```
  * @param arr - array of type T to be partitioned into two arrays
- * @param callbackFn - function that will be used to partition the array, must take array item and return boolean.
+ * @param predicateFn - function that will be used to partition the array, must take array item and return boolean.
  * @returns returns an array of length two containing an array item evaluated as true at index position 0 and array items evaluated as false at index position 1
  */
 export function partition<T>(
   arr: Array<T>,
-  callbackFn: (el: T) => boolean,
+  predicateFn: (el: T) => boolean,
 ): [Array<T>, Array<T>] {
   const arrayFalse: Array<T> = [];
   const arrayTrue: Array<T> = [];
   arr.forEach((el) =>
-    callbackFn(el) ? arrayTrue.push(el) : arrayFalse.push(el),
+    predicateFn(el) ? arrayTrue.push(el) : arrayFalse.push(el),
   );
 
   return [arrayTrue, arrayFalse];
