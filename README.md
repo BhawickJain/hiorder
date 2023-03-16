@@ -1,47 +1,23 @@
-# hiorder — higher-order function library
+# `@bhawick/hiorder` — higher-order function and array library
 
-## steps to make this package
+This is a series of high-order generic functions which allow useful array manipulation and function evaluations. Examples include `partition` which takes an array with a predicate function and returns two arrays of elements, the first containing those evaluated as `true` and the latter as `false`. Another example is the `collect` method which allows you to call a function for a set number of times and 'collect' all returned results into an array. 
 
-__project init__
-```
-npm init -y
-npm install typescript
-npx tsc --init
-```
+This is a fun side-project of mine so if are there any issues, feel free to raise them [here](https://github.com/BhawickJain/hiorder/issues)
 
-__link local package to a test project__
-```
-cd lib/
-yarn link
+## how to use
+
+```bash
+yarn add @bhawick/hiorder
 ```
 
-__add linked package to test project__
-```
-cd test/
-yarn link @bhawick/hiorder
+__minimal example__
+```ts
+// index.ts
+import {reduce} from "@bhawick/hiorder";
+
+console.log(reduce([1, 2, 3], (a: number, b: number) => a+b, 0))
 ```
 
-__increment version___
-increment version in package.json and add version git tag
-```
-yarn patch # !! only use when ready to release
-# to increment version
-yarn version --major
-yarn version --minor
-yarn version --patch
-```
+## Contributing
 
-push git version tag and trigger deployment
-```
-git push --tags
-```
-
-## TODO
-```
- : prettier
- : linter
- : jest
- : github ci
- : github package publishing
- : workflow to have a side-by-side test project
-```
+see the [CONTRIBUTING.md](CONTRIBUTING.md)

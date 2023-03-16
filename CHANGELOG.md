@@ -6,17 +6,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
-### Added
+### Added ✨
 
-### Changed
+### Changed 🛎️
 
-### Deprecated
+### Deprecated ⏳
 
-### Removed
+### Removed 🛑
 
-### Fixed
+### Fixed 🐛
 
-### Security
+### Security 🚨
+
+## [0.0.19] - 2023-03-16
+
+Public Release! 🎉
+
+### Added ✨
+ - Doc Strings for each function available!
+ - New `README.md` with `CONTRIBUTION.md` Docs
+
+### Changed 🛎️
+Minor changes to the test suite, unrelated to functionality, all related to DX.
 
 ## [0.0.18] - 2022-12-18
 
