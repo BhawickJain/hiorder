@@ -1,6 +1,6 @@
 {
   "name": "@bhawick/hiorder",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "high-order functions and array library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
